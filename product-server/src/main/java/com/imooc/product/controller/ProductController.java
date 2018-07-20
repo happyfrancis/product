@@ -10,6 +10,7 @@ import com.imooc.product.dataobject.ProductInfo;
 import com.imooc.product.service.ProductCategoryService;
 import com.imooc.product.service.ProductService;
 import com.imooc.product.utils.ResultVoUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +26,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/product")
+@Slf4j
 public class ProductController {
 
     @Autowired
@@ -43,7 +45,7 @@ public class ProductController {
     public ResultVo<ProductVo> list(HttpServletRequest request) {
 
 //        try {
-//            Thread.sleep(3000);
+//            Thread.sleep(2000);
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
